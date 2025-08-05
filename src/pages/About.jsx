@@ -5,7 +5,7 @@ import { chooseUs } from "../constants/chooseUs";
 
 const About = () => {
   return (
-    <div className="w-full p-10 bg-gray-200 py-10">
+    <section id="about" className="scroll-m-20 w-full p-10 bg-gray-200 py-10">
       {" "}
       <div className="max-w-4xl mx-auto  my-10">
         <Card padding="true">
@@ -59,7 +59,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

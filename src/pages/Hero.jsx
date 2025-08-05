@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 const Hero = () => {
   return (
-    <div className=" mx-auto bg-green-500 relative w-full">
+    <div id="hero" className=" mx-auto bg-green-500 relative w-full">
       <div className="h-[80vh]">
         <img
           src={hero3}

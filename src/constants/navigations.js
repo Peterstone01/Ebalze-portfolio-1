@@ -7,27 +7,27 @@ import { GrServices } from "react-icons/gr";
 export const navigations = [
   {
     name: "Home",
-    href: "/",
+    href: "hero",
     Icon: IoHomeOutline,
   },
   {
     name: "About",
-    href: "/about",
+    href: "about",
     Icon: FaUserTie,
   },
   {
     name: "Services",
-    href: "/services",
+    href: "services",
     Icon: GrServices,
   },
   {
     name: "Projects",
-    href: "/projects",
+    href: "projects",
     Icon: GoProjectSymlink,
   },
   {
     name: "Contact",
-    href: "/contact",
+    href: "contact",
     Icon: MdPhoneInTalk,
   },
 ];

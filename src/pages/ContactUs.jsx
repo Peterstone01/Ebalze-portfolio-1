@@ -7,7 +7,7 @@ import { FaRegUser } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <div className="w-full mt-16 bg-gray-200 min-h-[100vh]">
+    <div id="contact" className="w-full mt-16 bg-gray-200 min-h-[100vh]">
       <h1 className=" font-bold md:text-2xl text-center text-heading pt-10">
         Contact Us
       </h1>

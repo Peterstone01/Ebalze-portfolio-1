@@ -4,7 +4,7 @@ import { services } from "../constants/services";
 
 const Services = () => {
   return (
-    <div className="w-full bg-gray-200  py-10">
+    <div id="services" className="w-full bg-gray-200  py-10">
       <div className="max-w-6xl mx-auto my-10">
         <div>
           <h1 className=" font-bold md:text-2xl text-center text-heading">
