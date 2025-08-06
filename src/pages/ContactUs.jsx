@@ -4,6 +4,8 @@ import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const ContactUs = () => {
   return (
@@ -11,7 +13,12 @@ const ContactUs = () => {
       <h1 className=" font-bold md:text-2xl text-center text-heading pt-10">
         Contact Us
       </h1>
-      <div className="max-w-4xl mx-auto  my-10">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.6, y: -2 }}
+        whileInView={{ scale: 1, opacity: 1, y: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="max-w-4xl mx-auto  my-10"
+      >
         <div className="md:grid grid-cols-12 gap-4">
           {/* ////////////////////left */}
           <div className="col-span-6 ">
@@ -69,7 +76,7 @@ const ContactUs = () => {
             </Card>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

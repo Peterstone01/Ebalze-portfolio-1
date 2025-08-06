@@ -2,6 +2,8 @@ import React from "react";
 import Card from "../components/Card";
 import man from "../assets/man.jpg";
 import { chooseUs } from "../constants/chooseUs";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -13,7 +15,12 @@ const About = () => {
             About Us
           </h1>
           <div className="w-10 h-1 bg-primary mx-auto mb-5"></div>
-          <div className="md:grid grid-cols-12 gap-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6, y: -2 }}
+            whileInView={{ scale: 1, opacity: 1, y: 1 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="md:grid grid-cols-12 gap-4"
+          >
             {/* //////////////////left side */}
             <div className="col-span-5">
               <div padding="true">
@@ -37,15 +44,23 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </Card>
         <h1 className=" font-bold text-center  text-xl my-5 text-gray-700">
           Why you should choose us
         </h1>
-        <div className="md:grid grid-cols-12 gap-4 w-full">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.6, y: -2 }}
+          whileInView={{ scale: 1, opacity: 1, y: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          // style={box}
+          className="md:grid grid-cols-12 gap-4 w-full"
+        >
           {chooseUs.map((item, i) => (
-            <div
+            <motion.div
               key={i}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
               className="col-span-3 bg-white shadow-md rounded-md mb-3 shadow-gray-300 p-4"
             >
               <div className="flex items-center  gap-2">
@@ -55,9 +70,9 @@ const About = () => {
               </div>
               <div className="w-10 h-1 bg-primary mb-2"></div>
               <p>{item.content}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

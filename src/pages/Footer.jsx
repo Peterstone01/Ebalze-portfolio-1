@@ -1,7 +1,7 @@
 import React from "react";
 import { navigations } from "../constants/navigations";
 import { NavLink } from "react-router-dom";
-import elblaze from "../assets/elblaze.png";
+
 import { Link } from "react-scroll";
 import Card from "../components/Card";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
