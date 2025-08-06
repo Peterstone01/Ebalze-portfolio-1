@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div id="hero" className=" mx-auto bg-green-500 relative w-full">
       {/* ///////////////////////////////////// */}
-      <div className="h-[80vh] w-full">
+      {/* <div className="h-[80vh] w-full">
         <div className="gap-4 space-y-5 md:h-full   relative w-full overflow-hidden">
           {slides.map((image, i) => (
             <img
@@ -58,6 +58,13 @@ const Hero = () => {
             <IoChevronForwardCircleOutline className="size-8 lg:size-10" />
           </button>
         </div>
+      </div> */}
+      <div className="h-[80vh]">
+        <img
+          src={hero3}
+          alt="hero image"
+          className="h-[80vh] w-full object-cover"
+        />
       </div>
       {/* ///////////////////////////////////////////// */}
       <div className="absolute top-1/2 left-1/2 w-full md:w-[70%] -translate-x-1/2 -translate-y-1/2">
