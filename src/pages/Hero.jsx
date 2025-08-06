@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
+import hero1 from "../assets/hero1.jpg";
+import hero2 from "../assets/hero2.jpg";
 import hero3 from "../assets/hero3.jpg";
 import hero4 from "../assets/hero4.jpg";
 import hero5 from "../assets/hero5.jpg";
+import hero6 from "../assets/hero6.jpg";
+import hero7 from "../assets/hero7.jpg";
+
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import {
@@ -11,11 +16,13 @@ import {
 const Hero = () => {
   const slides = [hero3, hero4, hero5];
   const [currentSlide, setCurrentSlide] = useState(0);
+  // const [index, setIndex] = useState(0);
+  // const lastIndex = slides.length - 1;
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => prevSlide + 1);
       return clearInterval(timer);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <div id="hero" className=" mx-auto bg-green-500 relative w-full">
@@ -79,3 +86,25 @@ export default Hero;
         />
       </div> */
 }
+// useEffect(() => {
+//   const timer = setInterval(() => {
+//     setCurrentSlide((prevSlide) => prevSlide + 1);
+//     return clearInterval(timer);
+//   }, 5000);
+// }, []);
+// useEffect(() => {
+//   if (index < 0) {
+//     setIndex(lastIndex);
+//   }
+//   if (index > lastIndex) {
+//     setIndex(0);
+//   }
+// }, [index]);
+
+// // autoslide, clearInterval = een cleanup functie noodzakelijk bij interval
+// useEffect(() => {
+//   let slider = setInterval(() => {
+//     setCurrentSlide((index) => index + 1);
+//   }, 3000);
+//   return () => clearInterval(slider);
+// }, [index]);
