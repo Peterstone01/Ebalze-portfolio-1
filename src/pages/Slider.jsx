@@ -2,25 +2,21 @@ import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
-import hero1 from "../assets/hero1.jpg";
-import hero2 from "../assets/hero2.jpg";
+import hero1 from "../assets/hero1.png";
+import hero2 from "../assets/hero2.png";
 import hero3 from "../assets/hero3.jpg";
-import hero4 from "../assets/hero4.jpg";
-import hero5 from "../assets/hero5.jpg";
-import hero6 from "../assets/hero6.jpg";
-import hero7 from "../assets/hero7.jpg";
+import hero6 from "../assets/hero6.png";
+
 import {
   IoChevronBackCircleOutline,
   IoChevronForwardCircleOutline,
 } from "react-icons/io5";
 
 function Slider() {
-  const slides = [hero3, hero4, hero5];
-
-  const [index, setIndex] = useState(0);
+  const slides = [hero1, hero2, hero6, hero3];
   const [currentSlide, setCurrentSlide] = useState(0);
+  console.log(currentSlide);
 
-  // autoslide, clearInterval = een cleanup functie noodzakelijk bij interval
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => prevSlide + 1);
@@ -31,7 +27,7 @@ function Slider() {
   return (
     <div id="hero" className=" mx-auto relative w-full">
       <div className="h-[80vh] w-full">
-        <div className="gap-4 space-y-5 h-full   relative w-full overflow-hidden">
+        <div className="md:gap-4 space-y-5 h-full   relative w-full overflow-hidden">
           {slides.map((image, i) => (
             <img
               key={i}
@@ -42,6 +38,7 @@ function Slider() {
               } absolute top-0 left-0 w-full h-full  object-cover transition-opacity duration-1000`}
             />
           ))}
+          <div className="w-full h-full bg-primary absolute top-0 right-0 opacity-20"></div>
           <button
             onClick={() =>
               setCurrentSlide(
@@ -58,10 +55,12 @@ function Slider() {
             }
             className="absolute top-1/2 right-4 transform -translate-y-1/2  text-primary "
           >
-            <IoChevronForwardCircleOutline className="size-8 lg:size-10" />
+            <IoChevronForwardCircleOutline className="size-8 lg:size-10 z-10" />
           </button>
         </div>
       </div>
+
+      {/* /////////////////// */}
     </div>
   );
 }

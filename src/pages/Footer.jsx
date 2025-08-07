@@ -12,7 +12,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#00335b] px-16 w-full bottom-0  min-h-[50vh] ">
+    <div className="bg-[#00335b] px-16 w-full bottom-0  mb-0 min-h-[50vh] ">
       <div className="max-w-6xl mx-auto  my-10">
         <div className="pt-10 flex  justify-center items-center">
           <Link to="hero" className="text-emerald-500 text-4xl font-bold">
