@@ -1,0 +1,3 @@
+import hero1 from "../../src/assets/hero1.jpg";
+
+export const data = [hero3, hero4, hero5];

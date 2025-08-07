@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="w-full mt-20 bg-gray-200 min-h-[100vh]">
+    <div id="contact" className="w-full mt-20 bg-gray-200 ">
       <h1 className=" font-bold md:text-2xl text-center text-heading pt-10">
         Contact Us
       </h1>
