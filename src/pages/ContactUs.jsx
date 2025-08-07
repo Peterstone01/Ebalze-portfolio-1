@@ -31,17 +31,17 @@ const ContactUs = () => {
                 For more information about our products and services, reachout
                 to our customer service through
               </p>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 my-2">
                 <MdOutlineMarkEmailRead />
-                <p>Send us Mail</p>
+                <p className="font-bold">info@emcnigltd.com</p>
               </div>
               <div className="flex items-center justify-start gap-2">
                 <FaWhatsapp />
-                <p>Reachout via Whatsapp: 234567890</p>
+                <p className=" font-bold"> +2347035725999</p>
               </div>
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 my-2">
                 <FaPhoneVolume />
-                <p>Our official call line</p>
+                <p className=" font-bold"> +2347035725999</p>
               </div>
             </Card>
           </div>
